@@ -16,7 +16,7 @@
  */
 package com.alipay.remoting.rpc.protocol;
 
-import com.alipay.remoting.CommandCode;
+import com.alipay.remoting.basic.command.CommandCode;
 
 /**
  * Command code for rpc remoting command.

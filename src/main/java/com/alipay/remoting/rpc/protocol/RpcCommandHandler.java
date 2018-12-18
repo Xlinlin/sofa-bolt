@@ -23,21 +23,21 @@ import java.util.concurrent.RejectedExecutionException;
 import org.slf4j.Logger;
 
 import com.alipay.remoting.AbstractRemotingProcessor;
-import com.alipay.remoting.CommandCode;
-import com.alipay.remoting.CommandFactory;
-import com.alipay.remoting.CommandHandler;
-import com.alipay.remoting.CommonCommandCode;
-import com.alipay.remoting.ProcessorManager;
-import com.alipay.remoting.RemotingCommand;
+import com.alipay.remoting.basic.command.CommandCode;
+import com.alipay.remoting.basic.command.CommandFactory;
+import com.alipay.remoting.basic.command.CommandHandler;
+import com.alipay.remoting.basic.command.CommonCommandCode;
+import com.alipay.remoting.basic.connection.manager.ProcessorManager;
+import com.alipay.remoting.basic.command.RemotingCommand;
 import com.alipay.remoting.RemotingContext;
 import com.alipay.remoting.RemotingProcessor;
 import com.alipay.remoting.ResponseStatus;
 import com.alipay.remoting.log.BoltLoggerFactory;
-import com.alipay.remoting.rpc.RequestCommand;
-import com.alipay.remoting.rpc.ResponseCommand;
-import com.alipay.remoting.rpc.RpcCommand;
-import com.alipay.remoting.rpc.RpcCommandType;
-import com.alipay.remoting.rpc.RpcConfigManager;
+import com.alipay.remoting.rpc.command.RequestCommand;
+import com.alipay.remoting.rpc.command.ResponseCommand;
+import com.alipay.remoting.rpc.command.RpcCommand;
+import com.alipay.remoting.rpc.command.RpcCommandType;
+import com.alipay.remoting.rpc.manager.RpcConfigManager;
 
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelFutureListener;
@@ -186,7 +186,7 @@ public class RpcCommandHandler implements CommandHandler {
     }
 
     /**
-     * @see CommandHandler#registerProcessor(com.alipay.remoting.CommandCode, RemotingProcessor)
+     * @see CommandHandler#registerProcessor(CommandCode, RemotingProcessor)
      */
     @Override
     public void registerProcessor(CommandCode cmd,

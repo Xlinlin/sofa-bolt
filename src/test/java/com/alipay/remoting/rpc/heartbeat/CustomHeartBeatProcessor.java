@@ -23,7 +23,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.alipay.remoting.AbstractRemotingProcessor;
-import com.alipay.remoting.RemotingCommand;
+import com.alipay.remoting.basic.command.RemotingCommand;
 import com.alipay.remoting.RemotingContext;
 
 /**

@@ -18,6 +18,7 @@ package com.alipay.remoting;
 
 import java.util.concurrent.ExecutorService;
 
+import com.alipay.remoting.basic.command.CommandCode;
 import com.alipay.remoting.rpc.protocol.UserProcessor;
 
 /**

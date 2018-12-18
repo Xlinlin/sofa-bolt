@@ -16,13 +16,13 @@
  */
 package com.alipay.remoting.rpc;
 
-import com.alipay.remoting.CommandFactory;
-import com.alipay.remoting.Connection;
-import com.alipay.remoting.DefaultConnectionManager;
+import com.alipay.remoting.basic.command.CommandFactory;
+import com.alipay.remoting.basic.connection.Connection;
+import com.alipay.remoting.basic.connection.manager.DefaultConnectionManager;
 import com.alipay.remoting.InvokeCallback;
 import com.alipay.remoting.InvokeContext;
 import com.alipay.remoting.RemotingAddressParser;
-import com.alipay.remoting.RemotingCommand;
+import com.alipay.remoting.basic.command.RemotingCommand;
 import com.alipay.remoting.Url;
 import com.alipay.remoting.exception.RemotingException;
 import com.alipay.remoting.util.RemotingUtil;

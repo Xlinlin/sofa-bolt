@@ -18,7 +18,9 @@ package com.alipay.remoting;
 
 import java.util.concurrent.ConcurrentHashMap;
 
-import com.alipay.remoting.rpc.RpcCommandType;
+import com.alipay.remoting.basic.command.RemotingCommand;
+import com.alipay.remoting.basic.connection.Connection;
+import com.alipay.remoting.rpc.command.RpcCommandType;
 import com.alipay.remoting.rpc.protocol.UserProcessor;
 import com.alipay.remoting.util.ConnectionUtil;
 import com.alipay.remoting.util.StringUtils;

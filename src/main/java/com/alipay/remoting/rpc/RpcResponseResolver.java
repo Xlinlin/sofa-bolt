@@ -16,6 +16,7 @@
  */
 package com.alipay.remoting.rpc;
 
+import com.alipay.remoting.rpc.command.ResponseCommand;
 import org.slf4j.Logger;
 
 import com.alipay.remoting.ResponseStatus;

@@ -29,10 +29,10 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.alipay.remoting.Connection;
+import com.alipay.remoting.basic.connection.Connection;
 import com.alipay.remoting.ConnectionEventType;
 import com.alipay.remoting.InvokeCallback;
-import com.alipay.remoting.ProtocolManager;
+import com.alipay.remoting.basic.protocol.ProtocolManager;
 import com.alipay.remoting.exception.RemotingException;
 import com.alipay.remoting.rpc.RpcClient;
 import com.alipay.remoting.rpc.RpcResponseFuture;

@@ -20,29 +20,33 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import com.alipay.remoting.rpc.command.RpcCommandFactory;
+import com.alipay.remoting.rpc.connection.RpcConnectionFactory;
+import com.alipay.remoting.rpc.handler.RpcConnectionEventHandler;
+import com.alipay.remoting.rpc.manager.RpcTaskScanner;
 import org.slf4j.Logger;
 
-import com.alipay.remoting.Connection;
-import com.alipay.remoting.ConnectionEventHandler;
-import com.alipay.remoting.ConnectionEventListener;
+import com.alipay.remoting.basic.connection.Connection;
+import com.alipay.remoting.basic.connection.handler.ConnectionEventHandler;
+import com.alipay.remoting.basic.connection.listener.ConnectionEventListener;
 import com.alipay.remoting.ConnectionEventProcessor;
 import com.alipay.remoting.ConnectionEventType;
-import com.alipay.remoting.ConnectionMonitorStrategy;
-import com.alipay.remoting.ConnectionPool;
-import com.alipay.remoting.ConnectionSelectStrategy;
-import com.alipay.remoting.DefaultConnectionManager;
-import com.alipay.remoting.DefaultConnectionMonitor;
+import com.alipay.remoting.basic.connection.strategy.ConnectionMonitorStrategy;
+import com.alipay.remoting.basic.connection.ConnectionPool;
+import com.alipay.remoting.basic.connection.strategy.ConnectionSelectStrategy;
+import com.alipay.remoting.basic.connection.manager.DefaultConnectionManager;
+import com.alipay.remoting.basic.connection.manager.DefaultConnectionMonitor;
 import com.alipay.remoting.InvokeCallback;
 import com.alipay.remoting.InvokeContext;
-import com.alipay.remoting.RandomSelectStrategy;
-import com.alipay.remoting.ReconnectManager;
+import com.alipay.remoting.basic.connection.strategy.RandomSelectStrategy;
+import com.alipay.remoting.basic.connection.manager.ReconnectManager;
 import com.alipay.remoting.RemotingAddressParser;
-import com.alipay.remoting.ScheduledDisconnectStrategy;
+import com.alipay.remoting.basic.connection.strategy.ScheduledDisconnectStrategy;
 import com.alipay.remoting.Url;
 import com.alipay.remoting.config.AbstractConfigurableInstance;
 import com.alipay.remoting.config.configs.ConfigType;
 import com.alipay.remoting.config.switches.GlobalSwitch;
-import com.alipay.remoting.connection.ConnectionFactory;
+import com.alipay.remoting.basic.connection.factory.ConnectionFactory;
 import com.alipay.remoting.exception.RemotingException;
 import com.alipay.remoting.log.BoltLoggerFactory;
 import com.alipay.remoting.rpc.protocol.UserProcessor;
@@ -760,7 +764,7 @@ public class RpcClient extends AbstractConfigurableInstance {
      * Notice: 
      *   <ol>
      *   <li>Get a connection, if none then create.
-     *   <li>Bolt will control this connection in {@link com.alipay.remoting.ConnectionPool}
+     *   <li>Bolt will control this connection in {@link ConnectionPool}
      *   <li>You should use {@link #closeConnection(Url url)} to close it.
      *   </ol>
      * 

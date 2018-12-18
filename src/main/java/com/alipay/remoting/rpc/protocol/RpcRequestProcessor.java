@@ -23,15 +23,15 @@ import java.util.concurrent.RejectedExecutionException;
 import org.slf4j.Logger;
 
 import com.alipay.remoting.AbstractRemotingProcessor;
-import com.alipay.remoting.CommandFactory;
+import com.alipay.remoting.basic.command.CommandFactory;
 import com.alipay.remoting.InvokeContext;
-import com.alipay.remoting.RemotingCommand;
+import com.alipay.remoting.basic.command.RemotingCommand;
 import com.alipay.remoting.RemotingContext;
 import com.alipay.remoting.ResponseStatus;
 import com.alipay.remoting.exception.DeserializationException;
 import com.alipay.remoting.exception.SerializationException;
 import com.alipay.remoting.log.BoltLoggerFactory;
-import com.alipay.remoting.rpc.RpcCommandType;
+import com.alipay.remoting.rpc.command.RpcCommandType;
 import com.alipay.remoting.util.RemotingUtil;
 
 import io.netty.channel.Channel;
@@ -70,7 +70,7 @@ public class RpcRequestProcessor extends AbstractRemotingProcessor<RpcRequestCom
     }
 
     /**
-     * @see com.alipay.remoting.AbstractRemotingProcessor#process(com.alipay.remoting.RemotingContext, com.alipay.remoting.RemotingCommand, java.util.concurrent.ExecutorService)
+     * @see com.alipay.remoting.AbstractRemotingProcessor#process(com.alipay.remoting.RemotingContext, RemotingCommand, java.util.concurrent.ExecutorService)
      */
     @Override
     public void process(RemotingContext ctx, RpcRequestCommand cmd, ExecutorService defaultExecutor)
@@ -125,7 +125,7 @@ public class RpcRequestProcessor extends AbstractRemotingProcessor<RpcRequestCom
     }
 
     /**
-     * @see com.alipay.remoting.AbstractRemotingProcessor#doProcess(com.alipay.remoting.RemotingContext, com.alipay.remoting.RemotingCommand)
+     * @see com.alipay.remoting.AbstractRemotingProcessor#doProcess(com.alipay.remoting.RemotingContext, RemotingCommand)
      */
     @SuppressWarnings({ "rawtypes", "unchecked" })
     @Override

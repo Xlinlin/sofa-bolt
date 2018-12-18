@@ -29,7 +29,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.alipay.remoting.ConnectionEventType;
-import com.alipay.remoting.CustomSerializerManager;
+import com.alipay.remoting.basic.serialization.CustomSerializerManager;
 import com.alipay.remoting.InvokeCallback;
 import com.alipay.remoting.InvokeContext;
 import com.alipay.remoting.config.Configs;
@@ -44,7 +44,7 @@ import com.alipay.remoting.rpc.common.PortScan;
 import com.alipay.remoting.rpc.common.RequestBody;
 import com.alipay.remoting.rpc.common.SimpleClientUserProcessor;
 import com.alipay.remoting.rpc.common.SimpleServerUserProcessor;
-import com.alipay.remoting.serialization.SerializerManager;
+import com.alipay.remoting.basic.serialization.SerializerManager;
 
 /**
  * Custom Serializer Test: Normal, Exception included

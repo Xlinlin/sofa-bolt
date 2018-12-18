@@ -20,11 +20,11 @@ import java.io.Serializable;
 
 import org.slf4j.Logger;
 
-import com.alipay.remoting.CommandEncoder;
+import com.alipay.remoting.basic.command.CommandEncoder;
 import com.alipay.remoting.log.BoltLoggerFactory;
-import com.alipay.remoting.rpc.RequestCommand;
-import com.alipay.remoting.rpc.ResponseCommand;
-import com.alipay.remoting.rpc.RpcCommand;
+import com.alipay.remoting.rpc.command.RequestCommand;
+import com.alipay.remoting.rpc.command.ResponseCommand;
+import com.alipay.remoting.rpc.command.RpcCommand;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
@@ -40,7 +40,7 @@ public class RpcCommandEncoder implements CommandEncoder {
     private static final Logger logger = BoltLoggerFactory.getLogger("RpcRemoting");
 
     /**
-     * @see com.alipay.remoting.CommandEncoder#encode(io.netty.channel.ChannelHandlerContext, java.io.Serializable, io.netty.buffer.ByteBuf)
+     * @see CommandEncoder#encode(io.netty.channel.ChannelHandlerContext, java.io.Serializable, io.netty.buffer.ByteBuf)
      */
     @Override
     public void encode(ChannelHandlerContext ctx, Serializable msg, ByteBuf out) throws Exception {

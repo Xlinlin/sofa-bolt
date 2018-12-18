@@ -16,17 +16,20 @@
  */
 package com.alipay.remoting.rpc;
 
+import com.alipay.remoting.rpc.command.RequestCommand;
+import com.alipay.remoting.rpc.command.ResponseCommand;
+import com.alipay.remoting.rpc.command.RpcCommandType;
 import org.slf4j.Logger;
 
 import com.alipay.remoting.BaseRemoting;
-import com.alipay.remoting.CommandFactory;
-import com.alipay.remoting.Connection;
-import com.alipay.remoting.DefaultConnectionManager;
+import com.alipay.remoting.basic.command.CommandFactory;
+import com.alipay.remoting.basic.connection.Connection;
+import com.alipay.remoting.basic.connection.manager.DefaultConnectionManager;
 import com.alipay.remoting.InvokeCallback;
 import com.alipay.remoting.InvokeContext;
 import com.alipay.remoting.InvokeFuture;
 import com.alipay.remoting.RemotingAddressParser;
-import com.alipay.remoting.RemotingCommand;
+import com.alipay.remoting.basic.command.RemotingCommand;
 import com.alipay.remoting.Url;
 import com.alipay.remoting.config.switches.ProtocolSwitch;
 import com.alipay.remoting.exception.CodecException;
@@ -369,7 +372,7 @@ public abstract class RpcRemoting extends BaseRemoting {
     }
 
     /**
-     * @see com.alipay.remoting.BaseRemoting#createInvokeFuture(com.alipay.remoting.RemotingCommand, com.alipay.remoting.InvokeContext)
+     * @see com.alipay.remoting.BaseRemoting#createInvokeFuture(RemotingCommand, com.alipay.remoting.InvokeContext)
      */
     @Override
     protected InvokeFuture createInvokeFuture(RemotingCommand request, InvokeContext invokeContext) {

@@ -16,6 +16,7 @@
  */
 package com.alipay.remoting.rpc;
 
+import com.alipay.remoting.rpc.manager.RpcConfigManager;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Assert;

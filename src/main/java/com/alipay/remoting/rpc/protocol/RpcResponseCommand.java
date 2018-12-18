@@ -18,14 +18,14 @@ package com.alipay.remoting.rpc.protocol;
 
 import java.io.UnsupportedEncodingException;
 
-import com.alipay.remoting.CustomSerializer;
-import com.alipay.remoting.CustomSerializerManager;
+import com.alipay.remoting.basic.serialization.CustomSerializer;
+import com.alipay.remoting.basic.serialization.CustomSerializerManager;
 import com.alipay.remoting.InvokeContext;
 import com.alipay.remoting.config.Configs;
 import com.alipay.remoting.exception.DeserializationException;
 import com.alipay.remoting.exception.SerializationException;
-import com.alipay.remoting.rpc.ResponseCommand;
-import com.alipay.remoting.serialization.SerializerManager;
+import com.alipay.remoting.rpc.command.ResponseCommand;
+import com.alipay.remoting.basic.serialization.SerializerManager;
 
 /**
  * Response command for Rpc.

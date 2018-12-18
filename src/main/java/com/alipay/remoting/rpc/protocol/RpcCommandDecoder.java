@@ -21,15 +21,15 @@ import java.util.List;
 
 import org.slf4j.Logger;
 
-import com.alipay.remoting.CommandCode;
-import com.alipay.remoting.CommandDecoder;
+import com.alipay.remoting.basic.command.CommandCode;
+import com.alipay.remoting.basic.command.CommandDecoder;
 import com.alipay.remoting.ResponseStatus;
 import com.alipay.remoting.log.BoltLoggerFactory;
-import com.alipay.remoting.rpc.HeartbeatAckCommand;
-import com.alipay.remoting.rpc.HeartbeatCommand;
-import com.alipay.remoting.rpc.RequestCommand;
-import com.alipay.remoting.rpc.ResponseCommand;
-import com.alipay.remoting.rpc.RpcCommandType;
+import com.alipay.remoting.rpc.command.HeartbeatAckCommand;
+import com.alipay.remoting.rpc.command.HeartbeatCommand;
+import com.alipay.remoting.rpc.command.RequestCommand;
+import com.alipay.remoting.rpc.command.ResponseCommand;
+import com.alipay.remoting.rpc.command.RpcCommandType;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
@@ -52,7 +52,7 @@ public class RpcCommandDecoder implements CommandDecoder {
     }
 
     /**
-     * @see com.alipay.remoting.CommandDecoder#decode(io.netty.channel.ChannelHandlerContext, io.netty.buffer.ByteBuf, java.util.List)
+     * @see CommandDecoder#decode(io.netty.channel.ChannelHandlerContext, io.netty.buffer.ByteBuf, java.util.List)
      */
     @Override
     public void decode(ChannelHandlerContext ctx, ByteBuf in, List<Object> out) throws Exception {

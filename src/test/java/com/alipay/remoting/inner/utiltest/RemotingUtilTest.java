@@ -33,7 +33,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.alipay.remoting.BizContext;
-import com.alipay.remoting.Connection;
+import com.alipay.remoting.basic.connection.Connection;
 import com.alipay.remoting.NamedThreadFactory;
 import com.alipay.remoting.Url;
 import com.alipay.remoting.rpc.RpcAddressParser;

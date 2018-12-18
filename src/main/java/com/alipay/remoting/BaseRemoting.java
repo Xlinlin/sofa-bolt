@@ -16,18 +16,19 @@
  */
 package com.alipay.remoting;
 
-import java.util.concurrent.TimeUnit;
-
-import org.slf4j.Logger;
-
+import com.alipay.remoting.basic.command.CommandFactory;
+import com.alipay.remoting.basic.command.RemotingCommand;
+import com.alipay.remoting.basic.connection.Connection;
 import com.alipay.remoting.exception.RemotingException;
 import com.alipay.remoting.log.BoltLoggerFactory;
 import com.alipay.remoting.util.RemotingUtil;
-
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelFutureListener;
 import io.netty.util.Timeout;
 import io.netty.util.TimerTask;
+import org.slf4j.Logger;
+
+import java.util.concurrent.TimeUnit;
 
 /**
  * Base remoting capability.

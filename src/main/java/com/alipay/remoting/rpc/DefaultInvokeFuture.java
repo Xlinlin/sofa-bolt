@@ -22,18 +22,19 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 
+import com.alipay.remoting.rpc.command.ResponseCommand;
 import org.slf4j.Logger;
 
-import com.alipay.remoting.CommandFactory;
-import com.alipay.remoting.CommandHandler;
+import com.alipay.remoting.basic.command.CommandFactory;
+import com.alipay.remoting.basic.command.CommandHandler;
 import com.alipay.remoting.InvokeCallback;
 import com.alipay.remoting.InvokeCallbackListener;
 import com.alipay.remoting.InvokeContext;
 import com.alipay.remoting.InvokeFuture;
-import com.alipay.remoting.Protocol;
-import com.alipay.remoting.ProtocolCode;
-import com.alipay.remoting.ProtocolManager;
-import com.alipay.remoting.RemotingCommand;
+import com.alipay.remoting.basic.protocol.Protocol;
+import com.alipay.remoting.basic.protocol.ProtocolCode;
+import com.alipay.remoting.basic.protocol.ProtocolManager;
+import com.alipay.remoting.basic.command.RemotingCommand;
 import com.alipay.remoting.log.BoltLoggerFactory;
 
 import io.netty.util.Timeout;
@@ -127,7 +128,7 @@ public class DefaultInvokeFuture implements InvokeFuture {
     }
 
     /** 
-     * @see com.alipay.remoting.InvokeFuture#putResponse(com.alipay.remoting.RemotingCommand)
+     * @see com.alipay.remoting.InvokeFuture#putResponse(RemotingCommand)
      */
     @Override
     public void putResponse(RemotingCommand response) {

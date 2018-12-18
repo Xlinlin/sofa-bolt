@@ -22,7 +22,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import org.junit.Assert;
 
-import com.alipay.remoting.Connection;
+import com.alipay.remoting.basic.connection.Connection;
 import com.alipay.remoting.ConnectionEventProcessor;
 
 /**

@@ -19,13 +19,13 @@ package com.alipay.remoting.rpc.protocol;
 import org.slf4j.Logger;
 
 import com.alipay.remoting.AbstractRemotingProcessor;
-import com.alipay.remoting.Connection;
+import com.alipay.remoting.basic.connection.Connection;
 import com.alipay.remoting.InvokeFuture;
-import com.alipay.remoting.RemotingCommand;
+import com.alipay.remoting.basic.command.RemotingCommand;
 import com.alipay.remoting.RemotingContext;
 import com.alipay.remoting.log.BoltLoggerFactory;
-import com.alipay.remoting.rpc.HeartbeatAckCommand;
-import com.alipay.remoting.rpc.HeartbeatCommand;
+import com.alipay.remoting.rpc.command.HeartbeatAckCommand;
+import com.alipay.remoting.rpc.command.HeartbeatCommand;
 import com.alipay.remoting.util.RemotingUtil;
 
 import io.netty.channel.ChannelFuture;

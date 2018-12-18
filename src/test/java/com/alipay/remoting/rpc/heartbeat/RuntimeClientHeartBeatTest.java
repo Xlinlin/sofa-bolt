@@ -23,7 +23,7 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.alipay.remoting.CommonCommandCode;
+import com.alipay.remoting.basic.command.CommonCommandCode;
 import com.alipay.remoting.ConnectionEventType;
 import com.alipay.remoting.config.Configs;
 import com.alipay.remoting.exception.RemotingException;

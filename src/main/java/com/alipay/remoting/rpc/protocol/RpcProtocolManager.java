@@ -16,7 +16,7 @@
  */
 package com.alipay.remoting.rpc.protocol;
 
-import com.alipay.remoting.ProtocolManager;
+import com.alipay.remoting.basic.protocol.ProtocolManager;
 
 /**
  * Protocol manager.

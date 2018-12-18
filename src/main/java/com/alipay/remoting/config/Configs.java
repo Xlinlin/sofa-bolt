@@ -16,7 +16,7 @@
  */
 package com.alipay.remoting.config;
 
-import com.alipay.remoting.serialization.SerializerManager;
+import com.alipay.remoting.basic.serialization.SerializerManager;
 
 /**
  * Define the key for a certain config item using system property,

@@ -18,6 +18,7 @@ package com.alipay.remoting;
 
 import java.net.InetSocketAddress;
 
+import com.alipay.remoting.basic.command.RemotingCommand;
 import io.netty.util.Timeout;
 
 /**

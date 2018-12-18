@@ -16,7 +16,7 @@
  */
 package com.alipay.remoting.util;
 
-import com.alipay.remoting.Connection;
+import com.alipay.remoting.basic.connection.Connection;
 import com.alipay.remoting.InvokeFuture;
 
 import io.netty.channel.Channel;

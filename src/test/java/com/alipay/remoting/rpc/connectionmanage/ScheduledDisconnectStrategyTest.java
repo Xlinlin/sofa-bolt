@@ -21,7 +21,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.alipay.remoting.Connection;
+import com.alipay.remoting.basic.connection.Connection;
 import com.alipay.remoting.ConnectionEventType;
 import com.alipay.remoting.RemotingAddressParser;
 import com.alipay.remoting.Url;
@@ -30,7 +30,7 @@ import com.alipay.remoting.exception.RemotingException;
 import com.alipay.remoting.rpc.DefaultInvokeFuture;
 import com.alipay.remoting.rpc.RpcAddressParser;
 import com.alipay.remoting.rpc.RpcClient;
-import com.alipay.remoting.rpc.RpcCommandType;
+import com.alipay.remoting.rpc.command.RpcCommandType;
 import com.alipay.remoting.rpc.common.BoltServer;
 import com.alipay.remoting.rpc.common.CONNECTEventProcessor;
 import com.alipay.remoting.rpc.common.DISCONNECTEventProcessor;

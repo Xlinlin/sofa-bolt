@@ -16,6 +16,8 @@
  */
 package com.alipay.remoting;
 
+import com.alipay.remoting.basic.command.RemotingCommand;
+
 import java.util.concurrent.ExecutorService;
 
 /**

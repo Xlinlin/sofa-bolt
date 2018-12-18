@@ -16,6 +16,8 @@
  */
 package com.alipay.remoting;
 
+import com.alipay.remoting.basic.command.CommandCode;
+import com.alipay.remoting.basic.connection.manager.ProcessorManager;
 import org.junit.Assert;
 import org.junit.Test;
 

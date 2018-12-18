@@ -21,12 +21,12 @@ import java.io.Serializable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.alipay.remoting.CommandEncoder;
-import com.alipay.remoting.Connection;
+import com.alipay.remoting.basic.command.CommandEncoder;
+import com.alipay.remoting.basic.connection.Connection;
 import com.alipay.remoting.config.switches.ProtocolSwitch;
-import com.alipay.remoting.rpc.RequestCommand;
-import com.alipay.remoting.rpc.ResponseCommand;
-import com.alipay.remoting.rpc.RpcCommand;
+import com.alipay.remoting.rpc.command.RequestCommand;
+import com.alipay.remoting.rpc.command.ResponseCommand;
+import com.alipay.remoting.rpc.command.RpcCommand;
 import com.alipay.remoting.util.CrcUtil;
 
 import io.netty.buffer.ByteBuf;

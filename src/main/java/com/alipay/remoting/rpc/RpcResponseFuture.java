@@ -18,6 +18,7 @@ package com.alipay.remoting.rpc;
 
 import com.alipay.remoting.InvokeFuture;
 import com.alipay.remoting.exception.RemotingException;
+import com.alipay.remoting.rpc.command.ResponseCommand;
 import com.alipay.remoting.rpc.exception.InvokeTimeoutException;
 
 /**

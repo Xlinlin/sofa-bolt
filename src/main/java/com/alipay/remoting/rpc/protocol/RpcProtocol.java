@@ -16,13 +16,13 @@
  */
 package com.alipay.remoting.rpc.protocol;
 
-import com.alipay.remoting.CommandDecoder;
-import com.alipay.remoting.CommandEncoder;
-import com.alipay.remoting.CommandFactory;
-import com.alipay.remoting.CommandHandler;
-import com.alipay.remoting.HeartbeatTrigger;
-import com.alipay.remoting.Protocol;
-import com.alipay.remoting.rpc.RpcCommandFactory;
+import com.alipay.remoting.basic.command.CommandDecoder;
+import com.alipay.remoting.basic.command.CommandEncoder;
+import com.alipay.remoting.basic.command.CommandFactory;
+import com.alipay.remoting.basic.command.CommandHandler;
+import com.alipay.remoting.basic.connection.hearbeat.HeartbeatTrigger;
+import com.alipay.remoting.basic.protocol.Protocol;
+import com.alipay.remoting.rpc.command.RpcCommandFactory;
 
 /**
  * Request command protocol for v1

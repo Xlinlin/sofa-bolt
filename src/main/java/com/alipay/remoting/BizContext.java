@@ -16,6 +16,8 @@
  */
 package com.alipay.remoting;
 
+import com.alipay.remoting.basic.connection.Connection;
+
 /**
  * basic info for biz
  * 
